@@ -66,6 +66,20 @@ Diagnostic completed successfully.
 * Windows 10 or Windows 11
 * Rust toolchain (1.70 or newer) if building from source
 
+### Installing Globally (Run from Any Terminal Directory)
+
+To run the utility anywhere on your system simply by typing `batteryhealth` or `battery`:
+
+```powershell
+cargo install --path .
+```
+
+Once installed, open any new Command Prompt or PowerShell window and type:
+
+```powershell
+batteryhealth
+```
+
 ### Running with Cargo
 
 Clone the repository and run the project directly:
