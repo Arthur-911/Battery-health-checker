@@ -61,7 +61,13 @@ Diagnostic completed successfully.
 
 ## Quick Start
 
-### Prerequisites
+### Download Pre-built Binary (No Setup Needed)
+
+You can download the standalone executable directly from the [Releases page](https://github.com/Arthur-911/Battery-health-checker/releases/latest).
+
+Place `batteryhealth.exe` anywhere (or copy it to a USB flash drive) and execute it directly from PowerShell or Command Prompt. No runtime installation is required.
+
+### Prerequisites (For Building from Source)
 
 * Windows 10 or Windows 11
 * Rust toolchain (1.70 or newer) if building from source
