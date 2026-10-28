@@ -367,8 +367,8 @@ fn main() {
 
     if has_power_status {
         let ac_status = match power_status.ACLineStatus {
-            0 => "🔋 Battery Power (Unplugged)",
-            1 => "⚡ AC Adapter (Plugged In)",
+            0 => "Battery Power (Unplugged)",
+            1 => "AC Adapter (Plugged In)",
             _ => "Unknown",
         };
         let pct = power_status.BatteryLifePercent;
@@ -390,8 +390,8 @@ fn main() {
     let batteries = scan_all_batteries();
 
     if batteries.is_empty() {
-        println!("\n⚠️  No ACPI-compliant battery found.");
-        println!("   (If you are running on a Desktop PC or VM, no battery exists.)\n");
+        println!("\n[!] No ACPI-compliant battery found.");
+        println!("    (If you are running on a Desktop PC or VM, no battery exists.)\n");
         return;
     }
 
@@ -442,5 +442,5 @@ fn main() {
         println!("└─────────────────────────────────────────────────────────────────");
     }
 
-    println!("\n✔ Diagnostics finished successfully.\n");
+    println!("\nDiagnostic completed successfully.\n");
 }
